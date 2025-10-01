@@ -3,7 +3,7 @@ import heroBg from "../../assets/bg-shadow.png";
 
 const Subscribe = () => {
   return (
-    <div className="max-w-[1280px] mx-auto mt-50 relative mb-[-180px] z-10 re  border-1 border-white p-4 bg-[#FFFFFF]/15  rounded-2xl">
+    <div className="max-w-[1280px] mx-auto mt-30 relative mb-[-180px] z-10 re  border-1 border-white p-4 bg-[#FFFFFF]/15  rounded-2xl">
       <div
         className="  mt-6 rounded-2xl   bg-white p-1 "
         style={{ backgroundImage: `url(${heroBg})` }}

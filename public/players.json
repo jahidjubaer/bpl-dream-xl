@@ -1,0 +1,168 @@
+[
+  
+  {
+    "id": 2,
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "playingRole": "Batsman",
+    "Rating": 85,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": "120,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/363300/363385.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "playingRole": "Wicketkeeper-Batsman",
+    "Rating": 87,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "N/A",
+    "price": "110,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/402700/402761.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "playingRole": "All-rounder",
+    "Rating": 82,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": "115,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/392700/392766.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "playingRole": "Bowler",
+    "Rating": 88,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm fast-medium",
+    "price": "130,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/406000/406088.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Litton Das",
+    "country": "Bangladesh",
+    "playingRole": "Wicketkeeper-Batsman",
+    "Rating": 83,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "N/A",
+    "price": "100,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/406000/406098.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "playingRole": "Bowler",
+    "Rating": 81,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": "105,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/406800/406836.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Soumya Sarkar",
+    "country": "Bangladesh",
+    "playingRole": "All-rounder",
+    "Rating": 78,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": "95,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/392800/392895.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Andre Russell",
+    "country": "West Indies",
+    "playingRole": "All-rounder",
+    "Rating": 90,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": "200,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/404100/404117.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Chris Gayle",
+    "country": "West Indies",
+    "playingRole": "Batsman",
+    "Rating": 89,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": "180,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/364700/364790.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Kieron Pollard",
+    "country": "West Indies",
+    "playingRole": "All-rounder",
+    "Rating": 88,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": "170,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/406100/406144.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "playingRole": "Bowler",
+    "Rating": 93,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak googly",
+    "price": "190,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/406300/406379.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Mohammad Nabi",
+    "country": "Afghanistan",
+    "playingRole": "All-rounder",
+    "Rating": 86,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": "145,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/405700/405708.jpg"
+  },
+  {
+    "id": 14,
+    "name": "David Miller",
+    "country": "South Africa",
+    "playingRole": "Batsman",
+    "Rating": 84,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": "140,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/397700/397727.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Imran Tahir",
+    "country": "South Africa",
+    "playingRole": "Bowler",
+    "Rating": 86,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": "125,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/403900/403935.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Alex Hales",
+    "country": "England",
+    "playingRole": "Batsman",
+    "Rating": 85,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "N/A",
+    "price": "150,000 USD",
+    "img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/405400/405472.jpg"
+  }
+]

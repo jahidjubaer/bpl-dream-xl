@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="navbar max-w-[1280px] mx-auto mt-12 flex items-center">
       <div className="flex-1">
         <a>
-          <img src={logoImg} alt="" srcset="" />
+          <img src={logoImg} alt=""  />
         </a>
       </div>
       <div className="flex gap-10  items-center">
@@ -28,7 +28,7 @@ const Navbar = () => {
         <button className="btn font-bold border-sky-100  btn-ghost">
           <span>0 </span>
           <span>Coin</span>
-          <img src={dollarImg} alt="" srcset="" />
+          <img src={dollarImg} alt=""  />
         </button>
       </div>
     </div>

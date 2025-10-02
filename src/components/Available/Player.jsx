@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import Selected from "../Selected/Selected";
 
-const Player = ({ player }) => {
-  console.log(player);
+const Player = ({ player, coin, setCoin, selected, setSelected,setSelectedID,selectedID }) => {
+  // console.log(player);
+  // handle chose btn
+  
+  
 
+  const playerPrice = parseInt(
+    player.price.split(",").join("").split("USD").join("")
+  );
+
+  const handlePlayer = (id) => {
+    // console.log(selectedID);
+    const newID = [...selectedID, id]; 
+    // selectedCnt
+    const playerSelectedCnt = selected + 1;
+    // console.log(playerSelectedCnt);
+
+    // coin remaining
+    const remainingCoin = coin - playerPrice;
+    if (remainingCoin < playerPrice || playerSelectedCnt > 6) {
+      alert("you don't have enough coin or your player limit  ");
+      return;
+    }
+   
+    
+    setSelectedID(newID); 
+    setSelected(playerSelectedCnt);
+    setCoin(remainingCoin);
+    setChoose(true);
+  };
+
+  const [choose, setChoose] = useState(false);
   return (
     <div className="border-[#131313]/10 border-1 shadow-sm rounded-xl p-6">
       <div className="  h-[300px] ">
@@ -14,12 +44,12 @@ const Player = ({ player }) => {
       </div>
 
       <div className="flex items-center gap-3 mt-6">
-        <i class="fa-solid fa-user"></i>
+        <i className="fa-solid fa-user"></i>
         <h2 className="font-bold text-xl">{player.name}</h2>
       </div>
       <div className="flex justify-between items-center mt-4">
         <div className="flex gap-2 items-center">
-          <i class="fa-solid fa-flag fa-lg text-gray-500"></i>
+          <i className="fa-solid fa-flag fa-lg text-gray-500"></i>
           <p className="text-xl text-gray-500">{player.country}</p>
         </div>
         <div className="bg-[#131313]/5 p-2 rounded-lg">
@@ -37,8 +67,16 @@ const Player = ({ player }) => {
         <p className="text-sm font-semibold">{player.bowlingStyle}</p>
       </div>
       <div className="flex justify-between items-center">
-        <h3 className="text-xl font-semibold">Price $<span>{player.price}</span></h3>
-        <button className="btn bg-white">Choose Player</button>
+        <h3 className="text-xl font-semibold">
+          Price $<span>{player.price}</span>
+        </h3>
+        <button
+          disabled={choose}
+          onClick={() => handlePlayer(player.id)}
+          className="btn bg-white"
+        >
+          {choose ? "Selected" : "Choose Player"}
+        </button>
       </div>
     </div>
   );

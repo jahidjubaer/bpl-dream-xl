@@ -18,10 +18,17 @@ const playersPromise = loadPlayers();
 
 function App() {
   // toggling using state ;
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
+  // coin
+  const [coin, setCoin] = useState(1000000);
+  // selected
+  const [selected, setSelected] = useState(0);
+  // selected id ;
+  const [selectedID, setSelectedID] = useState([])
+
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar coin={coin}></Navbar>
       <Banner></Banner>
 
       {/* after banner there have a common area in available player and selected player section here it is  */}
@@ -47,12 +54,12 @@ function App() {
               !toggle ? "bg-[#E7FE29] font-bold" : ""
             } `}
           >
-            Selected (<span>0</span>)
+            Selected (<span>{selected}</span>)
           </button>
         </div>
       </div>
       {/* toggle as it set true and false ;  */}
-      {toggle ? (
+      {toggle ? 
         <Suspense
           fallback={
             <div className="max-w-[1280px] mx-auto flex justify-center">
@@ -60,12 +67,22 @@ function App() {
             </div>
           }
         >
-          <Available playersPromise={playersPromise}></Available>
+          <Available
+            playersPromise={playersPromise}
+            coin={coin}
+            setCoin={setCoin}
+            selected={selected}
+            setSelected={setSelected}
+            selectedID ={selectedID}
+            setSelectedID = {setSelectedID}
+          ></Available>
         </Suspense>
-      ) : (
-        <Selected></Selected>
-      )}
+       : 
+        <Selected selectedID ={selectedID} playersPromise={playersPromise} ></Selected>
+      }
+      
       <Subscribe></Subscribe>
+      
       <Footer></Footer>
     </>
   );

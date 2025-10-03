@@ -1,22 +1,33 @@
 import React, { use } from "react";
 import SelectedPlayer from "./SelectedPlayer";
 
-const Selected = ({ selectedID, playersPromise }) => {
+const Selected = ({
+  selectedID,
+  playersPromise,
+  handleDelete,
+  selectedPlayerData,
+}) => {
   const players = use(playersPromise);
 
   // console.log(players);
-//   console.log(selectedID);
+  //   console.log(selectedID);
 
   const selectedPlayer = players.filter((player) =>
     selectedID.includes(player.id)
   );
-//   console.log(selectedPlayer);
+
+  selectedPlayerData(selectedPlayer);
 
   return (
-    
-        <div>
-            {selectedPlayer.map(playerSl => <SelectedPlayer playerSl = {playerSl}></SelectedPlayer>)}
-        </div>
+    <div>
+      {selectedPlayer.map((playerSl) => (
+        <SelectedPlayer
+          handleDelete={handleDelete}
+          key={playerSl.id}
+          playerSl={playerSl}
+        ></SelectedPlayer>
+      ))}
+    </div>
   );
 };
 

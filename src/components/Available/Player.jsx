@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import Selected from "../Selected/Selected";
 
-const Player = ({ player, coin, setCoin, selected, setSelected,setSelectedID,selectedID }) => {
+import { toast } from "react-toastify";
+
+const Player = ({ player, coin, setCoin, setSelectedID, selectedID }) => {
   // console.log(player);
   // handle chose btn
-  
-  
 
   const playerPrice = parseInt(
     player.price.split(",").join("").split("USD").join("")
@@ -13,21 +12,22 @@ const Player = ({ player, coin, setCoin, selected, setSelected,setSelectedID,sel
 
   const handlePlayer = (id) => {
     // console.log(selectedID);
-    const newID = [...selectedID, id]; 
-    // selectedCnt
-    const playerSelectedCnt = selected + 1;
-    // console.log(playerSelectedCnt);
-
+    const newID = [...selectedID, id];
+    // console.log(selectedID.length);
     // coin remaining
     const remainingCoin = coin - playerPrice;
-    if (remainingCoin < playerPrice || playerSelectedCnt > 6) {
-      alert("you don't have enough coin or your player limit  ");
+    if (remainingCoin < playerPrice) {
+      toast.error("you don't have enough coin.");
       return;
     }
-   
-    
-    setSelectedID(newID); 
-    setSelected(playerSelectedCnt);
+    if (selectedID.length >= 6) {
+      toast.warn("You already selected 6 the player");
+      return;
+    }
+    toast.success("Purchased");
+
+    setSelectedID(newID);
+
     setCoin(remainingCoin);
     setChoose(true);
   };

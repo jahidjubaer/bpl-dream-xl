@@ -5,8 +5,6 @@ const Available = ({
   playersPromise,
   coin,
   setCoin,
-  selected,
-  setSelected,
   selectedID,
   setSelectedID
 }) => {
@@ -20,8 +18,6 @@ const Available = ({
           <Player
             player={player}
             coin={coin}
-            selected={selected}
-            setSelected={setSelected}
             setCoin={setCoin}
             key={player.id}
             selectedID ={selectedID}
